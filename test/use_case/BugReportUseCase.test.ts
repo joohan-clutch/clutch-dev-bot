@@ -2,7 +2,7 @@ import { bugReportService } from "../../src/service/BugReportService";
 import { AppDataSource } from "../../src/AppDataSource";
 import { bugReportUseCase } from "../../src/use_case/BugReportUseCase";
 
-describe("BugReportService", function () {
+describe("BugReportService", function (this: Mocha.Suite) {
   this.timeout(10000);
   let today: Date;
   before(async function () {
